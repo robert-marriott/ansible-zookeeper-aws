@@ -1,0 +1,14 @@
+---
+- hosts: zookeeper_servers
+  user: centos
+  sudo: yes
+  roles:
+     - { role: ansiblebit.oracle-java,
+         oracle_java_set_as_default: yes,
+         oracle_java_version: 8,
+         oracle_java_version_update: 102,
+         oracle_java_version_build: 14}
+
+  tasks:
+  - name: ensure apache is at the latest version
+    yum: name=httpd state=latest

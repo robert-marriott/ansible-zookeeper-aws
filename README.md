@@ -26,6 +26,14 @@ $ ansible-galaxy install ansiblebit.oracle-java
 ### Modify hosts file to point to your hosts
 ```# Main list of hosts to install zookeeper on
 [zookeeper_servers]
-54.91.50.234```
+54.91.50.234
+```
 Copy hosts file to ansible directory
-```cp hosts /usr/local/etc/ansible/hosts```
+```sh
+$ cp hosts /usr/local/etc/ansible/hosts
+```
+
+### Run the ansible playbook
+```
+$ ansible-playbook zookeeper_java_cluster.yml
+```
