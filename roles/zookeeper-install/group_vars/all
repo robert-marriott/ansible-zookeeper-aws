@@ -1,0 +1,33 @@
+# --------------------------------------
+# USERs
+# --------------------------------------
+
+zookeeper_user: zkadmin
+zookeeper_group: zkadmin
+zookeeper_password: $6$rounds=40000$1qjG/hovLZOkcerH$CK4Or3w8rR3KabccowciZZUeD.nIwR/VINUa2uPsmGK/2xnmOt80TjDwbof9rNvnYY6icCkdAR2qrFquirBtT1
+
+# --------------------------------------
+# COMMON FOR INSTALL PATH
+# --------------------------------------
+
+# Common Location information.
+common:
+  install_base_path: /usr/local
+  soft_link_base_path: /opt
+
+# --------------------------------------
+# Zookeeper Variables.
+# --------------------------------------
+
+# Zookeeper Version.
+zookeeper_version: zookeeper-3.4.5-cdh5.1.2
+
+# Zookeeper Storage and Logging.
+zookeeper_data_store: /data/ansible/zookeeper
+zookeeper_logging: /data/ansible/zookeeper_logging
+
+
+# --------------------------------------
+# JAVA Variables.
+# --------------------------------------
+java_home: /usr/local/java/jdk

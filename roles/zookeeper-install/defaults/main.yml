@@ -1,4 +1,11 @@
+# Zookeeper Version.
+zookeeper_version: zookeeper-3.4.9
 
+# Zookeeper Storage and Logging.
+zookeeper_data_store: /data/ansible/zookeeper
+zookeeper_logging: /data/ansible/zookeeper_logging
+
+# Zookeeper default ports for cfg
 zookeeper_client_port: 2181
 zookeeper_leader_port: 2888
 zookeeper_election_port: 3888
