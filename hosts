@@ -1,0 +1,12 @@
+#Servers to deploy zookeeper
+
+# the mongo servers need a mongod_port variable set, and they must not conflict.
+[zookeeper_servers]
+54.91.50.234
+
+#The list of servers where replication should happen, by default include all servers
+[zookeeper_masters]
+
+
+#The list of zookeeper configuration servers, make sure it is 1 or 3
+[zookeeper_slaves]
