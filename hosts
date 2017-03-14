@@ -1,12 +1,13 @@
 #Servers to deploy zookeeper
+# cp hosts /usr/local/etc/ansible/hosts
 
-# the mongo servers need a mongod_port variable set, and they must not conflict.
+# Main list of hosts to install zookeeper on
 [zookeeper_servers]
 54.91.50.234
 
-#The list of servers where replication should happen, by default include all servers
+#Master servers (if needed)
 [zookeeper_masters]
 
 
-#The list of zookeeper configuration servers, make sure it is 1 or 3
+#Slave nodes (if needed)
 [zookeeper_slaves]
