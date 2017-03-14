@@ -2,12 +2,5 @@
 # cp hosts /usr/local/etc/ansible/hosts
 
 # Main list of hosts to install zookeeper on
-[zookeeper_servers]
-54.91.50.234
-
-#Master servers (if needed)
-[zookeeper_masters]
-
-
-#Slave nodes (if needed)
-[zookeeper_slaves]
+[zookeeper_nodes]
+54.91.50.234 zookeeper_id=1

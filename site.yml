@@ -1,0 +1,7 @@
+---
+- hosts: all
+  user: centos
+  sudo: yes
+  roles:
+    - java
+    - zookeeper-install

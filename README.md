@@ -10,7 +10,6 @@
   -Update Java
 -Install Zookeeper on target machines
 
-
 ### Start ssh agent with your key
 ```sh
 $ ssh-agent bash
@@ -23,7 +22,7 @@ This has an included role to verify Java on the target machine
 $ ansible-galaxy install ansiblebit.oracle-java
 ```
 
-### Modify hosts file to point to your hosts
+### Modify _local_ hosts file to point to your hosts
 ```# Main list of hosts to install zookeeper on
 [zookeeper_servers]
 54.91.50.234
