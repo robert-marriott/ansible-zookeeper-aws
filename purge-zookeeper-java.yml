@@ -1,16 +1,21 @@
 ---
 - hosts: all
   user: centos
+  vars:
+      install_base_path: /usr/local
+      soft_link_base_path: /opt
+      zookeeper_data_store: /data/ansible/zookeeper
+      zookeeper_logging: /data/ansible/zookeeper_logging
+      zookeeper_version: zookeeper-3.4.5-cdh5.1.2
   sudo: yes
   tasks:
 
   - name: Stop Zookeeper
-    command: sh {{ common['soft_link_base_path'] }}/zookeeper/bin/zkServer.sh stop
+    command: sh {{ soft_link_base_path }}/zookeeper/bin/zkServer.sh stop
     sudo: yes
-    sudo_user: "{{ zookeeper_user }}"
 
   - name: Remove Zookeeper Directories.
-    command: rm -rf {{ common['soft_link_base_path'] }}/zookeeper {{ common['install_base_path'] }}/{{ zookeeper_version }} {{ zookeeper_data_store }} {{ zookeeper_logging }}
+    command: rm -rf {{ soft_link_base_path}}/zookeeper {{ install_base_path}}/{{ zookeeper_version }} {{ zookeeper_data_store }} {{ zookeeper_logging }}
 
   - name: Purge Java java-jdk
-    command: rm -rf /opt/jre*
+    command: rm -rf /opt/jdk*

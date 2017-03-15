@@ -1,5 +1,5 @@
 ---
-- hosts: zookeepernodes
+- hosts: all
   vars:
     install_mode: "standalone"
   user: centos
@@ -8,4 +8,4 @@
     # Java role from scratch
     - role: java-jdk-install
     # Zookeeper role from scratch
-    - role: zookeeper_install_tarball
+    - role: zookeeper-install
