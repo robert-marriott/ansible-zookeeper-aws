@@ -6,6 +6,6 @@
   sudo: yes
   roles:
     # Java role from scratch
-    - role: java
+    - role: java-jdk-install
     # Zookeeper role from scratch
-    # - role: zookeeper
+    - role: zookeeper_install_tarball

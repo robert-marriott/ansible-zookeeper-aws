@@ -1,0 +1,32 @@
+# --------------------------------------
+# Zookeeper Variables.
+# --------------------------------------
+
+# Zookeeper Version.
+zookeeper_version: zookeeper-3.4.5-cdh5.1.2
+
+# Zookeeper Storage and Logging.
+zookeeper_data_store: /data/ansible/zookeeper
+zookeeper_logging: /data/ansible/zookeeper_logging
+
+# --------------------------------------
+# USERs
+# --------------------------------------
+
+zookeeper_user: zkadmin
+zookeeper_group: zkadmin
+zookeeper_password: zkpassword
+
+# --------------------------------------
+# COMMON FOR INSTALL PATH
+# --------------------------------------
+
+# Common Location information.
+common:
+  install_base_path: /usr/local
+  soft_link_base_path: /opt
+
+# --------------------------------------
+# JAVA Variables.
+# --------------------------------------
+java_home: /usr/local/java/jdk

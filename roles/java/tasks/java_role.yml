@@ -1,8 +1,0 @@
-# This is a more complex role for installing java on the target Machines
-# It is from a github repo, and is a locally installed module
-# Run this command for the ansible extension: ansible-galaxy install ansiblebit.oracle-java
----
-- hosts: all
-  roles:
-     - { role: ansiblebit.oracle-java,
-         oracle_java_set_as_default: yes }
