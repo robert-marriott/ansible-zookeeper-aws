@@ -1,0 +1,9 @@
+---
+- hosts: zookeeper-cluster
+  vars:
+    install_mode: "cluster"
+  user: centos
+  sudo: yes
+  roles:
+    - { role: ansiblebit.oracle-java, oracle_java_set_as_default: yes }
+    - { role: ansible-zookeeper}

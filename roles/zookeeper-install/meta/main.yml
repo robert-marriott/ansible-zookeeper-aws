@@ -1,6 +1,0 @@
-
-info:
-  author: Robert Marriott
-  description: ZooKeeper cluster install w/ Java 8 install (tarball)
-  license: None
-  min_ansible_version: 1.8.1

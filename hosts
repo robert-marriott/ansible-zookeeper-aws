@@ -3,4 +3,14 @@
 
 # Main list of hosts to install zookeeper on
 [zookeepernodes]
-54.91.50.234 zookeeper_id=1
+54.164.80.49 zookeeper_id=1
+54.84.249.151 zookeeper_id=2
+
+# Host if targeting a single installation
+[zookeeper-standalone]
+54.164.80.49 zookeeper_id=1
+
+# Hosts for cluster mode
+[zookeeper-cluster]
+54.164.80.49 zookeeper_id=1
+54.84.249.151 zookeeper_id=2

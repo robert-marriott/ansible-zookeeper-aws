@@ -1,9 +1,0 @@
----
-- hosts: all
-  user: centos
-  sudo: yes
-  roles:
-    - role: java
-    - role: zookeeper_install_tarball
-    #- role: {fancyjavarole}
-    #- role: zookeeper-install

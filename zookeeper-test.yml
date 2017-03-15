@@ -1,0 +1,11 @@
+---
+- hosts: zookeepernodes
+  vars:
+    install_mode: "standalone"
+  user: centos
+  sudo: yes
+  roles:
+    # Java role from scratch
+    - role: java
+    # Zookeeper role from scratch
+    # - role: zookeeper
